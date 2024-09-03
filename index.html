@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF Christopher Araya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--------------------- Barra Superior ----------------------->
+    <header class="header">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('sobre-mi');" href="javascript:void(0)">Sobre mi</a></li>
+                <li><a onclick="scrollToSection('experiencia');" href="javascript:void(0)">Experiencia</a></li>
+                <li><a onclick="scrollToSection('habilidades');" href="javascript:void(0)">Habilidades</a></li>
+                <li><a onclick="scrollToSection('proyectos');" href="javascript:void(0)">Proyectos</a></li>
+            </ul>
+        </nav>
+        <a href="#contactarme" class="btn"><button>Contactame</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="#" class="close">&times;</a>
+            <div class="overlay-content">
+                <li><a onclick="closeNav(); scrollToSection('sobre-mi');" href="javascript:void(0)">Sobre mi</a></li>
+                <li><a onclick="closeNav(); scrollToSection('experiencia');" href="javascript:void(0)">Experiencia</a></li>
+                <li><a onclick="closeNav(); scrollToSection('habilidades');" href="javascript:void(0)">Habilidades</a></li>
+                <li><a onclick="closeNav(); scrollToSection('proyectos');" href="javascript:void(0)">Proyectos</a></li>
+                <li><a onclick="closeNav(); scrollToSection('contactarme');" href="javascript:void(0)">Contactame</a></li>
+            </div>
+        </div>
+    </header>
+    <!--------------------- Seccion Sobre Mi ----------------------->
+    <section id="sobre-mi" class="section">
+        <div class="foto-perfil">
+            <img src="img/yo.png" alt="Foto">
+        </div>
+        <div class="abajo-perfil">
+            <div class="nombre">Christopher Araya Vargas</div>
+            <div class="descripcion">
+                <p>Me llamo Christopher, pero me dicen Chris, tengo 25 años
+                    y soy de Valparaiso, Chile. Terminé mis estudios como 
+                    Analista Programador. Me encanta enfocarme en la parte 
+                    del rendimiento, para ofrecer la mejor experiencia
+                    al usuario.
+                </p>
+                <p>Ademas, me encuentro en constante aprendizaje mediante
+                    cursos para ampliar mis conocimientos en el mundo
+                    de la programacion.
+                </p>
+                <h2>Actualmente mas especializado en el <strong>Front End</strong>
+                </h2>
+            </div>
+            <div class="educacion">
+                <div class="columna-izquierda">
+                    <img src="img/inacap.jpg" alt="Imagen Redonda">
+                </div>
+                <div class="columna-derecha">
+                    <p class="estudio">Estudie en la Universidad de Inacap Valparaiso</p>
+                    <p class="duracion">Duracion: <strong>2022 - 2023</strong></p>
+                </div>
+            </div>
+            <div class="enlaces">
+                <a href="mailto:christopherarayavargas@gmail.com">Contáctarme</a>
+                <a href="img/C.V.pdf" download>Curriculum</a>
+                <a href="https://github.com/ArChris140" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/christopher-araya-vargas-8b38641b8/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    <!--------------------- Seccion Experiencia ----------------------->
+    <section id="experiencia" class="section">
+        <div class="experience">
+            <h2>Experiencia</h2>
+            <div class="experience-content">
+                <div class="experience-text">
+                    <p>Practica Profesional trabajando como Desarrollador
+                        Web para la empresa Steraf.
+                    </p><br>
+                    <p class="duracion-experiencia">Duracion de 4 meses.</p>
+                </div>
+                <div class="experience-image">
+                    <img src="img/steraf.jpeg" alt="Steraf">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades" class="section">
+        <div class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-images">
+                <img src="img/html.png" alt="HTML">
+                <img src="img/css.png" alt="CSS">
+                <img src="img/javascript.png" alt="JavaScript">
+                <img src="img/php.png" alt="PHP">
+                <img src="img/python.png" alt="Python">
+                <img src="img/mysql.png" alt="MySQL">
+            </div>
+        </div>
+    </section>
+    <section id="aprendiendo" class="section">
+        <div class="aprendiendo">
+            <h2>Aprendiendo</h2>
+            <div class="aprendiendo-images">
+                <img src="img/react.png" alt="React">
+                <img src="img/angular.png" alt="Angular">
+            </div>
+        </div>
+    </section>
+    <!--------------------- Seccion Certificaciones ----------------------->
+    <section id="certificaciones" class="section">
+        <h2 class="certificaciones-title">Certificados</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Titulo</h3>
+                        <img src="img/certitulo.png" alt="Titulo">
+                        <a href="img/Certificado de titulo.pdf" download="Titulo Profesional" class="btn-1">Descargar</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Desarrollador Full Stack</h3>
+                        <img src="img/cerfullstack.png" alt="Certificado 2">
+                        <a href="img/Certificado en Desarrollador Full Stack.pdf" download="Desarrollador Full Stack" class="btn-1">Descargar</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Desarrollo en Aplicaciones Basicas</h3>
+                        <img src="img/cerdesarrolloapis.png" alt="Certificado 3">
+                        <a href="img/Certificado en Desarrollo de Aplicaciones Basicas.pdf" download="Desarrollo en Aplicaciones Basicas" class="btn-1">Descargar</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Diseño y Gestion de Base de Datos</h3>
+                        <img src="img/cerbasededatos.png" alt="Certificado 4">
+                        <a href="img/Certificado en Diseño y Gestion de Base de Datos.pdf" download="Diseño y Gestion de Base de Datos" class="btn-1">Descargar</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Diseño Agil de Sistemas</h3>
+                        <img src="img/ceragil.png" alt="Certificado 5">
+                        <a href="img/Certificado en Diseño Agil de Sistemas.pdf" download="Diseño Agil de Sistemas" class="btn-1">Descargar</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Soporte Computacional</h3>
+                        <img src="img/cersoporte.png" alt="Certificado 6">
+                        <a href="img/Certificado Soporte Computacional.pdf" download="Soporte Computacional" class="btn-1">Descargar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emojis-container">
+            <span class="emoji">👈</span>
+            <span class="emoji">👉</span>
+        </div>
+    </section>
+    <!--------------------- Seccion Proyectos ----------------------->
+    <section id="proyectos" class="section">
+        <h2 class="proyectos-title">Proyectos</h2>
+        <div class="proyectos-container">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <div class="proyecto-image">
+                    <img src="img/captura1steraf.png" alt="Proyecto 1" class="proyecto-img" />
+                    <img src="img/captura2steraf.png" alt="Proyecto 1 Hover" class="proyecto-img-hover" />
+                </div>
+                <div class="proyecto-info">
+                    <h3 class="proyecto-title">Steraf</h3>
+                    <p class="proyecto-description">Es una empresa de gasfitería en la cual realice mi practica profesional junto a un companero.</p>
+                    <div class="proyecto-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <a href="https://github.com/ArChris140/Steraf" class="btn-2">Code</a>
+                </div>
+            </div>
+            <!--------------------- Proyecto 2 ----------------------->
+            <div class="proyecto">
+                <div class="proyecto-image">
+                    <img src="img/captura1shiro.png" alt="Proyecto 2" class="proyecto-img" />
+                    <img src="img/captura2shiro.png" alt="Proyecto 2 Hover" class="proyecto-img-hover" />
+                </div>
+                <div class="proyecto-info">
+                    <h3 class="proyecto-title">Shiro's Web</h3>
+                    <p class="proyecto-description">Proyecto de titulo en equipo la cual se trata de una panadería en las cercanías de la universidad para que tenga la opcion de ventas online.</p>
+                    <div class="proyecto-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="https://github.com/ArChris140/Panader-a" class="btn-2">Code</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------- Seccion Contactarme ----------------------->
+    <section id="contactarme" class="section">
+        <div class="form-container">
+            <form action="https://formsubmit.co/christopherarayavargas@gmail.com" method="POST">
+                <h2>Contactame</h2>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    <span class="error-message" id="nameError"></span>
+
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <span class="error-message" id="emailError"></span>
+
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+
+                    <input class="btn3" type="submit" value="Enviar">
+                    <span class="success-message" id="successMessage"></span>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+                    <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
